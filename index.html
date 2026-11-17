@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kruimel — je recepten, onder de hand</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥘</text></svg>" />
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <span class="brand-icon">🥘</span>
+        <span class="brand-name">Kruimel</span>
+      </div>
+      <nav class="nav">
+        <a href="#/" data-nav="" class="nav-link active"><span>📖</span> Recepten</a>
+        <a href="#/boodschappen" data-nav="boodschappen" class="nav-link"><span>🛒</span> Boodschappenlijst <span class="badge" id="badge-boodschappen" hidden></span></a>
+        <a href="#/weekmenu" data-nav="weekmenu" class="nav-link"><span>📅</span> Weekmenu</a>
+        <a href="#/nieuw" data-nav="nieuw" class="nav-link nav-add"><span>＋</span> Nieuw recept</a>
+      </nav>
+      <div class="sidebar-section">
+        <h3>Tags</h3>
+        <div class="tag-cloud" id="tag-cloud"></div>
+      </div>
+      <div class="sidebar-footer">
+        <button id="theme-toggle" class="btn ghost small" title="Wissel licht/donker">🌙 Donker</button>
+      </div>
+    </aside>
+
+    <main id="main"></main>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="toast-root"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
